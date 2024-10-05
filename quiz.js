@@ -14,4 +14,7 @@ function checkAnswer(){
 const submitAnswer = document.getElementById('submit-answer');
 submitAnswer.addEventListener('click',checkAnswer);
 
-
+if(userAnswer === correctAnswer){
+    const feedback = document.getElementById('feedback');
+    feedback.textContent = "Correct! Well done.";
+}
